@@ -253,7 +253,7 @@ public class AbyssBlocks implements ContentList {
 				new UnitType[]{AbyssUnitTypes.katerni, AbyssUnitTypes.termina},
 				new UnitType[]{AbyssUnitTypes.saloni, AbyssUnitTypes.alerbite},
 				new UnitType[]{AbyssUnitTypes.solenopsis, AbyssUnitTypes.cricetiae},
-				new Unittype[]{AbyssUnitTypes.gas, AbyssUnitTypes.asteroid}
+				new UnitType[]{AbyssUnitTypes.gas, AbyssUnitTypes.asteroid}
 			);
 		}};
 		mult = new Reconstructor("reconstructor5") {{
@@ -270,7 +270,7 @@ public class AbyssBlocks implements ContentList {
 				new UnitType[]{AbyssUnitTypes.termina, AbyssUnitTypes.solanra},
 				new UnitType[]{AbyssUnitTypes.alerbite, AbyssUnitTypes.laminite},
 				new UnitType[]{AbyssUnitTypes.cricetiae, AbyssUnitTypes.oryctolagus},
-				new Unittype[]{AbyssUnitTypes.asteroid, AbyssUnitTypes.comet}
+				new UnitType[]{AbyssUnitTypes.asteroid, AbyssUnitTypes.comet}
 			);
 		}};
 		exp = new Reconstructor("reconstructor7") {{
@@ -289,7 +289,7 @@ public class AbyssBlocks implements ContentList {
 				new UnitType[]{AbyssUnitTypes.solanra, AbyssUnitTypes.deuteria},
 				new UnitType[]{AbyssUnitTypes.laminite, AbyssUnitTypes.almone},
 				new UnitType[]{AbyssUnitTypes.oryctolagus, AbyssUnitTypes.carcharodon},
-				new Unittype[]{AbyssUnitTypes.comet, AbyssUnitTypes.planet}
+				new UnitType[]{AbyssUnitTypes.comet, AbyssUnitTypes.planet}
 			);
 		}};
 		tetr = new Reconstructor("reconstructor9") {{
@@ -307,8 +307,8 @@ public class AbyssBlocks implements ContentList {
 				new UnitType[]{AbyssUnitTypes.kodene, AbyssUnitTypes.tolonia},
 				new UnitType[]{AbyssUnitTypes.deuteria, AbyssUnitTypes.atomega},
 				new UnitType[]{AbyssUnitTypes.almone, AbyssUnitTypes.aracnophobia},
-				new Unittype[]{AbyssUnitTypes.carcharodon, AbyssUnitTypes.orcinus},
-				new Unittype[]{AbyssUnitTypes.planet, AbyssUnitTypes.star}
+				new UnitType[]{AbyssUnitTypes.carcharodon, AbyssUnitTypes.orcinus},
+				new UnitType[]{AbyssUnitTypes.planet, AbyssUnitTypes.star}
 			);
 		}};
 
