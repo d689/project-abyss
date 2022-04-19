@@ -1456,6 +1456,8 @@ public class AbyssUnitTypes implements ContentList {
 					y = -16f;
 					reload = 30f;
 					recoil = 2f;
+					rotate = true;
+					rotateSpeed = 2f;
 					alternate = true;
 					shootSound = Sounds.laser;
 					bullet = new LaserBulletType(160) {{
@@ -1469,6 +1471,8 @@ public class AbyssUnitTypes implements ContentList {
 					y = 12f;
 					reload = 20f;
 					recoil = 2f;
+					rotate = true;
+					rotateSpeed = 2f;
 					alternate = true;
 					shootSound = Sounds.shootBig;
 					bullet = new BasicBulletType(4f, 120) {{
@@ -1484,6 +1488,8 @@ public class AbyssUnitTypes implements ContentList {
 					y = 0f;
 					reload = 30f;
 					recoil = 2f;
+					rotate = true;
+					rotateSpeed = 2f;
 					shootSound = Sounds.artillery;
 					bullet = new ArtilleryBulletType(4f, 80) {{
 						width = 12f;
