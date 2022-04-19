@@ -1270,6 +1270,7 @@ public class AbyssUnitTypes implements ContentList {
 
 		gas = new UnitType("gas") {{
 			health = 180;
+			armor = 2f;
 			speed = 2f;
 			flying = true;
 			lowAltitude = true;
@@ -1304,6 +1305,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		asteroid = new UnitType("asteroid") {{
 			health = 520;
+			armor = 4f;
 			speed = 1.7f;
 			flying = true;
 			lowAltitude = true;
@@ -1327,6 +1329,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		comet = new UnitType("comet") {{
 			health = 750;
+			armor = 7f;
 			speed = 1.6f;
 			flying = true;
 			lowAltitude = true;
@@ -1385,6 +1388,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		planet = new UnitType("planet") {{
 			health = 8500;
+			armor = 10f;
 			speed = 1.2f;
 			flying = true;
 			lowAltitude = true;
@@ -1441,12 +1445,13 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		star = new UnitType("star") {{
 			health = 20000;
+			armor = 15f;
 			speed = 0.5f;
 			flying = true;
 			lowAltitude = true;
 			constructor = UnitEntity::create;
 			range = 320f;
-			maxRange = range;
+			maxRange = 120f;
 			engineSize = 7f;
 			engineOffset = 20f;
 			hitSize = 40f;
