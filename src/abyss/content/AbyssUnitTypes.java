@@ -1175,7 +1175,7 @@ public class AbyssUnitTypes implements ContentList {
 					shootSound = Sounds.laserbig;
 					bullet = new ContinuousLaserBulletType(50) {{
 						width = 10f;
-						length = 320f;
+						length = range;
 						lifetime = 192f;
 						colors = new Color[]{Pal.sapBullet, Pal.sapBulletBack, Pal.sap};
 					}};
@@ -1489,7 +1489,7 @@ public class AbyssUnitTypes implements ContentList {
 					shootSound = Sounds.laser;
 					bullet = new LaserBulletType(160) {{
 						length = 160f;
-						maxRange = 280f;
+						maxRange = 200f;
 						shootEffect = AbyssFx.gasFlameHit;
 						colors = new Color[]{Color.valueOf("A8A8A8"), Color.valueOf("D6D6D6"), Color.white};
 					}};
