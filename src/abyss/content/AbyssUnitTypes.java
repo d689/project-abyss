@@ -30,6 +30,7 @@ public class AbyssUnitTypes implements ContentList {
 	public void load() {
 		antra = new UnitType("antra") {{
 			health = 250;
+			armor = 3f;
 			speed = 2f;
 			flying = true;
 			constructor = UnitEntity::create;
@@ -53,6 +54,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		karma = new UnitType("karma") {{
 			health = 475;
+			armor = 6f;
 			speed = 1.7f;
 			engineOffset = 6.5f;
 			flying = true;
@@ -80,6 +82,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		kalerbi = new UnitType("kalerbi") {{
 			health = 830;
+			armor  = 7f;
 			speed = 1.4f;
 			engineOffset = 0.5f;
 			engineSize = 5f;
@@ -118,6 +121,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		kodene = new UnitType("kodene") {{
 			health = 4000;
+			armor = 10f;
 			speed = 1f;
 			rotateSpeed = 1.9f;
 			engineSize = 6f;
@@ -163,6 +167,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		tolonia = new UnitType("tolonia") {{
 			health = 22000;
+			armor = 13f;
 			speed = 0.5f;
 			rotateSpeed = 1f;
 			engineSize = 8f;
@@ -281,6 +286,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		termina = new RotorUnitType("termina") {{
 			health = 530;
+			armor = 3f;
 			speed = 1.7f;
 			range = 200f;
 			lowAltitude = false;
@@ -354,6 +360,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		solanra = new RotorUnitType("solanra") {{
 			health = 960;
+			armor = 4f;
 			speed = 1.6f;
 			range = 276f;
 			maxRange = range;
@@ -449,9 +456,10 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		deuteria = new RotorUnitType("deuteria") {{
 			health = 6540;
+			armor = 7f;
 			speed = 1.5f;
 			range = 300f;
-			maxRange = range;
+			maxRange = 400f;
 			hitSize = 22f;
 
 			rotors.add(
@@ -538,6 +546,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		atomega = new RotorUnitType("atomega") {{
 			health = 22000;
+			armor = 10f;
 			speed = 1.5f;
 			range = 360f;
 			maxRange = range;
@@ -641,6 +650,7 @@ public class AbyssUnitTypes implements ContentList {
 
 		saloni = new RotorUnitType("saloni") {{
 			health = 220;
+			armor = 2f;
 			speed = 1.5f;
 			range = 100f;
 			flying = false;
@@ -677,6 +687,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		alerbite = new RotorUnitType("alerbite") {{
 			health = 530;
+			armor = 3f;
 			speed = 1.3f;
 			range = 130f;
 			maxRange = range;
@@ -732,6 +743,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		laminite = new RotorUnitType("laminite") {{
 			health = 950;
+			armor = 6f;
 			speed = 1f;
 			range = 180f;
 			maxRange = range;
@@ -796,6 +808,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		almone = new RotorUnitType("almone") {{
 			health = 7000;
+			armor = 10f;
 			speed = 0.7f;
 			range = 240f;
 			maxRange = range;
@@ -877,6 +890,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		aracnophobia = new RotorUnitType("aracnophobia") {{
 			health = 20000;
+			armor = 15f;
 			speed = 0.5f;
 			range = 300f;
 			maxRange = range;
@@ -958,6 +972,7 @@ public class AbyssUnitTypes implements ContentList {
 		solenopsis = new UnitType("solenopsis") {{
 			health = 250;
 			speed = 1f;
+			armor = 0f;
 			accel = 0.4f;
 			drag = 0.14f;
 			rotateSpeed = 5f;
@@ -1001,6 +1016,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		cricetiae = new UnitType("cricetiae") {{
 			health = 580;
+			armor = 3f;
 			speed = 0.83f;
 			accel = 0.4f;
 			drag = 0.14f;
@@ -1067,6 +1083,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		oryctolagus = new UnitType("oryctolagus") {{
 			health = 900;
+			armor = 7f;
 			speed = 0.80f;
 			accel = 0.4f;
 			drag = 0.14f;
@@ -1131,6 +1148,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		carcharodon = new UnitType("carcharodon") {{
 			health = 11500;
+			armor = 10f;
 			speed = 0.60f;
 			accel = 0.4f;
 			drag = 0.14f;
@@ -1181,6 +1199,7 @@ public class AbyssUnitTypes implements ContentList {
 		}};
 		orcinus = new UnitType("orcinus") {{
 			health = 21000f;
+			armor = 14f;
 			speed = 0.65f;
 			drag = 0.17f;
 			hitSize = 58f;
@@ -1225,7 +1244,8 @@ public class AbyssUnitTypes implements ContentList {
 					alternate = true;
 					rotate = true;
 					maxRange = 200f;
-					bullet = new ArtilleryBulletType(2f, 60) {{
+					shootSound = Sounds.shootBig;
+					bullet = new ArtilleryBulletType(3f, 60) {{
 						range = maxRange;
 						lifetime = 100f;
 						collides = true;
@@ -1241,7 +1261,8 @@ public class AbyssUnitTypes implements ContentList {
 					alternate = false;
 					rotate = true;
 					maxRange = 200f;
-					bullet = new ArtilleryBulletType(2f, 60) {{
+					shootSound = Sounds.shootBig;
+					bullet = new ArtilleryBulletType(3f, 60) {{
 						range = maxRange;
 						lifetime = 100f;
 						collides = true;
@@ -1256,7 +1277,8 @@ public class AbyssUnitTypes implements ContentList {
 					reload = 120f;
 					rotate = true;
 					maxRange = 300f;
-					bullet = new ArtilleryBulletType(2f, 100) {{
+					shootSound = Sounds.shootBig;
+					bullet = new ArtilleryBulletType(3f, 100) {{
 						range = maxRange;
 						lifetime = 150f;
 						collides = true;
@@ -1467,6 +1489,7 @@ public class AbyssUnitTypes implements ContentList {
 					shootSound = Sounds.laser;
 					bullet = new LaserBulletType(160) {{
 						length = 160f;
+						maxRange = 280f;
 						shootEffect = AbyssFx.gasFlameHit;
 						colors = new Color[]{Color.valueOf("A8A8A8"), Color.valueOf("D6D6D6"), Color.white};
 					}};
@@ -1483,7 +1506,8 @@ public class AbyssUnitTypes implements ContentList {
 					bullet = new BasicBulletType(4f, 120) {{
 						width = 12f;
 						height = 14.5f;
-						lifetime = 55f;
+						lifetime = 80f;
+						maxRange = 320f;
 						frontColor = Color.white;
 						backColor = Color.valueOf("D6D6D6");
 					}};
@@ -1500,7 +1524,7 @@ public class AbyssUnitTypes implements ContentList {
 						width = 12f;
 						height = 14.5f;
 						lifetime = 80f;
-						range = 320f;
+						maxRange = 320f;
 						collides = true;
 						frontColor = Color.white;
 						backColor = Color.valueOf("D6D6D6");
