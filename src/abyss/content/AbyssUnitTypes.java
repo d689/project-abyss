@@ -1472,8 +1472,8 @@ public class AbyssUnitTypes implements ContentList {
 			flying = true;
 			lowAltitude = true;
 			constructor = UnitEntity::create;
-			range = 320f;
-			maxRange = 120f;
+			range = 280f;
+			maxRange = range;
 			engineSize = 7f;
 			engineOffset = 20f;
 			hitSize = 40f;
