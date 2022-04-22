@@ -1172,6 +1172,7 @@ public class AbyssUnitTypes implements ContentList {
 					recoil = 5f;
 					rotate = true;
 					mirror = false;
+					continuous = true;
 					shootSound = Sounds.laserbig;
 					bullet = new ContinuousLaserBulletType(50) {{
 						width = 10f;
