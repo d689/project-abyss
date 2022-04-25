@@ -1236,8 +1236,6 @@ public class AbyssUnitTypes implements ContentList {
 						speed = range;
 						hitShake = 6f;
 						ammoMultiplier = 1f;
-					        frontColor = Pal.sapBullet;
-						backColor = Pal.sapBulletBack;
 					}};
 				}},
 				new Weapon("abyss-orcinus-artillery") {{
@@ -1258,7 +1256,6 @@ public class AbyssUnitTypes implements ContentList {
 						width = height = 15f;
 						splashDamageRadius = 45f;
                                                 splashDamage = 50f;
-						Color = Pal.sapBullet;
 					}};
 				}},
 				new Weapon("abyss-orcinus-artillery") {{
