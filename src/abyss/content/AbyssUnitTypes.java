@@ -1230,8 +1230,7 @@ public class AbyssUnitTypes implements ContentList {
 						smokeEffect = Fx.smokeCloud;
 						trailEffect = Fx.instTrail;
 						despawnEffect = Fx.instBomb;
-						frontColor = Pal.sapBullet;
-						backColor = Pal.sapBulletBack;
+                                                colors = new Color[]{Pal.sapBullet, Pal.sapBulletBack, Pal.sap};
 						trailSpacing = 20f;
 						damage = 1750;
 						buildingDamageMultiplier = 0.25f;
@@ -1246,7 +1245,7 @@ public class AbyssUnitTypes implements ContentList {
 					reload = 60f;
 					alternate = true;
 					rotate = true;
-					innacuracy = 9f;
+					inaccuracy = 9f;
 					shots = 3;
 					maxRange = 200f;
 					shootSound = Sounds.shootBig;
@@ -1268,7 +1267,7 @@ public class AbyssUnitTypes implements ContentList {
 					reload = 60f;
 					alternate = false;
 					rotate = true;
-					innacuracy = 9f;
+					inaccuracy = 9f;
 					shots = 3;
 					maxRange = 200f;
 					shootSound = Sounds.shootBig;
@@ -1289,7 +1288,7 @@ public class AbyssUnitTypes implements ContentList {
 					y = 0f;
 					reload = 120f;
 					rotate = true;
-					innacuracy = 10f;
+					inaccuracy = 10f;
 					shots = 4;
 					maxRange = 300f;
 					shootSound = Sounds.shootBig;
