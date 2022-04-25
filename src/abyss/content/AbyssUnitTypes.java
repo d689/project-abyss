@@ -1210,6 +1210,8 @@ public class AbyssUnitTypes implements ContentList {
 						smokeEffect = Fx.smokeCloud;
 						trailEffect = Fx.instTrail;
 						despawnEffect = Fx.instBomb;
+						frontColor = Pal.sapBullet;
+						backColor = Pal.sapBulletBack;
 						trailSpacing = 20f;
 						damage = 1750;
 						buildingDamageMultiplier = 0.25f;
@@ -1224,12 +1226,17 @@ public class AbyssUnitTypes implements ContentList {
 					reload = 60f;
 					alternate = true;
 					rotate = true;
+					innacuracy = 9f;
+					shots = 3;
 					maxRange = 200f;
 					bullet = new ArtilleryBulletType(2f, 60) {{
+						hitEffect = Fx.blastExplosion;
 						range = maxRange;
 						lifetime = 100f;
 						collides = true;
 						width = height = 15f;
+						splashDamageRadius = 45f;
+                                                splashDamage = 50f;
 						frontColor = Pal.sapBullet;
 						backColor = Pal.sapBulletBack;
 					}};
@@ -1240,12 +1247,17 @@ public class AbyssUnitTypes implements ContentList {
 					reload = 60f;
 					alternate = false;
 					rotate = true;
+					innacuracy = 9f;
+					shots = 3;
 					maxRange = 200f;
 					bullet = new ArtilleryBulletType(2f, 60) {{
+						hitEffect = Fx.blastExplosion;
 						range = maxRange;
 						lifetime = 100f;
 						collides = true;
 						width = height = 15f;
+						splashDamageRadius = 45f;
+                                                splashDamage = 50f;
 						frontColor = Pal.sapBullet;
 						backColor = Pal.sapBulletBack;
 					}};
@@ -1255,12 +1267,17 @@ public class AbyssUnitTypes implements ContentList {
 					y = 0f;
 					reload = 120f;
 					rotate = true;
+					innacuracy = 10f;
+					shots = 4;
 					maxRange = 300f;
 					bullet = new ArtilleryBulletType(2f, 100) {{
+						hitEffect = Fx.blastExplosion;
 						range = maxRange;
 						lifetime = 150f;
 						collides = true;
 						width = height = 15f;
+						splashDamageRadius = 45f;
+                                                splashDamage = 60f;
 						frontColor = Pal.sapBullet;
 						backColor = Pal.sapBulletBack;
 					}};
