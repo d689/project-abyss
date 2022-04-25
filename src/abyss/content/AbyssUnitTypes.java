@@ -1230,13 +1230,14 @@ public class AbyssUnitTypes implements ContentList {
 						smokeEffect = Fx.smokeCloud;
 						trailEffect = Fx.instTrail;
 						despawnEffect = Fx.instBomb;
-                                                colors = new Color[]{Pal.sapBullet, Pal.sapBulletBack, Pal.sap};
 						trailSpacing = 20f;
 						damage = 1750;
 						buildingDamageMultiplier = 0.25f;
 						speed = range;
 						hitShake = 6f;
 						ammoMultiplier = 1f;
+					        frontColor = Pal.sapBullet;
+						backColor = Pal.sapBulletBack;
 					}};
 				}},
 				new Weapon("abyss-orcinus-artillery") {{
