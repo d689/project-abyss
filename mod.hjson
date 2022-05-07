@@ -4,5 +4,5 @@ author: "Uujuju"
 main: "abyss.ProjectAbyss"
 description: "A Mindustry Java mod that im working on."
 version: 0.4.4
-minGameVersion: 135
+minGameVersion: 136
 java: true
